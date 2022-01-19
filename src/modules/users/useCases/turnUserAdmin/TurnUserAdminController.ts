@@ -12,6 +12,7 @@ class TurnUserAdminController {
       if (user) {
         return response.send(user);
       }
+      return response.send();
     } catch (error) {
       return response.status(404).send({ error: 'User not exists' });
     }
